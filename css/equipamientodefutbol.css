@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-size: 40px;
+}
+
+/* Cabecera */
+header {
+  background-color: darkgreen;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Secciones */
+main section {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Productos */
+.producto {
+ display: inline-block;
+  text-align: center;
+  margin: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 260px;         /* ancho total de la tarjeta */
+  vertical-align: top;  /* alinea tarjetas en fila */
+}
+
+.producto img {
+  width: 250px;       /* ancho fijo */
+  height: 250px;      /* altura fija */
+  object-fit: cover;   /* recorta la imagen para llenar el cuadro */
+}
+
+button {
+  padding: 5px 10px;
+  background-color: darkgreen;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+button:hover {
+  background-color: green;
+}
+
+/* Footer fijo */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+/* Deja espacio para el footer fijo */
+main {
+  margin-bottom: 60px;
+}
