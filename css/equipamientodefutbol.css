@@ -30,6 +30,9 @@ main section {
   text-align: center;
   padding: 20px;
 }
+iframe {
+	display:block;
+	margin: 0 auto;
 
 /* Productos */
 .producto {
@@ -66,7 +69,7 @@ footer {
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 100;
   background-color: #333;
   color: white;
   text-align: center;
