@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="css/equipamientodefutbol.css"?>
+<solicitud_contacto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="contacto.xsd">
+    <fecha>2026-03-01</fecha>
+    <cliente>
+        <nombre>Mosrikol</nombre>
+        <email>mosrikol@gmail.com</email>
+        <asunto>Duda sobre botas de fútbol</asunto>
+        <mensaje>HALA MADRID</mensaje>
+    </cliente>
+</solicitud_contacto>

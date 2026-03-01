@@ -7,7 +7,7 @@ body {
   font-size: 40px;
 }
 
-/* Cabecera */
+
 header {
   background-color: darkgreen;
   color: white;
@@ -25,7 +25,7 @@ header nav a:hover {
   text-decoration: underline;
 }
 
-/* Secciones */
+
 main section {
   text-align: center;
   padding: 20px;
@@ -33,22 +33,23 @@ main section {
 iframe {
 	display:block;
 	margin: 0 auto;
+}
 
-/* Productos */
-.producto {
+
+.productos {
  display: inline-block;
   text-align: center;
   margin: 20px;
   border: 1px solid #ccc;
   padding: 10px;
-  width: 260px;         /* ancho total de la tarjeta */
-  vertical-align: top;  /* alinea tarjetas en fila */
+  width: 260px;         
+  vertical-align: top;  
 }
 
-.producto img {
-  width: 250px;       /* ancho fijo */
-  height: 250px;      /* altura fija */
-  object-fit: cover;   /* recorta la imagen para llenar el cuadro */
+.productos img {
+  width: 250px;      
+  height: 250px;      
+  object-fit: cover;   
 }
 
 button {
@@ -64,20 +65,95 @@ button:hover {
   background-color: green;
 }
 
-/* Footer fijo */
+
+
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100;
-  background-color: #333;
-  color: white;
-  text-align: center;
+  position: fixed;   
+  bottom: 0;         
+  left: 0;           
+  width: 100%;        
+  z-index: 1000;     
+  background-color: #000; 
+  color: white;      
+  text-align: center; 
   padding: 10px 0;
   font-size: 14px;
 }
 
-/* Deja espacio para el footer fijo */
+
 main {
   margin-bottom: 60px;
 }
+.form-contacto {
+  max-width: 500px;     
+  margin: 20px auto;    
+  background: white;    
+  padding: 30px;
+  border-radius: 8px;    
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  text-align: left;     
+}
+
+.campo {
+  margin-bottom: 15px;   
+}
+
+.campo label {
+  display: block;        
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 18px;       
+}
+
+.campo input, 
+.campo select, 
+.campo textarea {
+  width: 100%;           
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+.form-contacto button {
+  width: 100%;
+  padding: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+solicitud_contacto {
+    display: block;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; 
+    padding: 50px;
+    font-size: 20px; 
+}
+
+cliente {
+    display: block;
+    max-width: 500px;
+    margin: 20px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+nombre, email, asunto, mensaje {
+    display: block;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+nombre::before { content: "Nombre del Cliente:"; display: block; color: darkgreen; font-weight: bold; font-size: 18px; }
+email::before { content: "Correo Electrónico:"; display: block; color: darkgreen; font-weight: bold; font-size: 18px; }
+asunto::before { content: "Asunto:"; display: block; color: darkgreen; font-weight: bold; font-size: 18px; }
+mensaje::before { content: "Mensaje:"; display: block; color: darkgreen; font-weight: bold; font-size: 18px; }
